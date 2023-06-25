@@ -1,44 +1,456 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kişisel Web Sayfası</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- linking css file -->
+  <link rel="stylesheet" href="style.css"><!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script><!-- font awesome -->
 
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-    </style>
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Hoş Geldiniz!</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Hakkımda</h2>
-            <p>Merhaba, Benim Adım Esad Boran. Bu benim kişisel web sayfam.</p>
-            <p>Bu sayfa yakın zamanda güncellencektir</p>
-        </section>
-
-        <section>
-            <h2>İletişim</h2>
-            <p>E-posta: esatsuphi@gmail.com </p>
-        </section>
-    </main>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+    <div class="container">
+      <a class="navbar-brand" href="#">Esad Boran</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#services" class="dropbtn nav-link">Services</a>
+            <div class="dropdown-content nav-item">
+              <a href="#ai"  style="color: aliceblue;">Artificial Intelligence</a>
+              <a href="#pl"  style="color: aliceblue;">Programming Languages</a>
+              <a href="#fst" style="color: aliceblue;">Full Stack Technologies</a>
+              <a href="#os"  style="color: aliceblue;">Other Skills</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- main banner -->
+  <section class="bgimage" id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title">Hi, it's me Esad</h2>
+          <p class="hero_desc">I am a senior student at the computer science department at Hacettepe University.</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/esadboran2018/" target="_blank">
+                <img src="images/social-media-icon/linkedin.png" alt="Esad Boran linkedin" style="width: 60px; height: 60px;"></a> <a href="https://github.com/esadboran" target="_blank">
+                    <img src="images/social-media-icon/icons8-github-50.png" alt="GitHub" style="width: 60px; height: 60px;"></a> <a href="https://twitter.com/BoranEsad" target="_blank">
+                        <img src="images/social-media-icon/icons8-twitter-100.png" alt="Twitter" style="width: 60px; height: 60px;"></a> <a href="Esad%20Boran-CV.pdf" download="" target="_blank">
+                            <img src="images/social-media-icon/icons8-cv-64-2.png" alt="Download CV" style="width: 60px; height: 60px;"></a> <a href="mailto:esadsuphi@gmail.com">
+                                <img src="images/social-media-icon/icons8-mail-48.png" alt="Email" style="width: 60px; height: 60px;"></a>
+          </div>
+          <div class="row justify-content-center mt-20">
+            <img src="images/social-media-icon/icons8-down-96.png" alt="Scroll down" class="scroll-icon" style="width: 150px; height: 150px;">
+            <p class="scroll-text"><a href="#about" class="scroll-text">Scroll down</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- about section-->
+  <section id="about">
+    <div class="container mt-4 pt-4">
+      <h1 class="text-center">About Me</h1>
+      <div class="row mt-4">
+        <div class="col-lg-4"><img src="images/photo.png" class="imageAboutPage" alt="photo"></div>
+        <div class="col-lg-8">
+          <p>Hello! I am happy to state that I am a 4th year Computer Engineering student at Hacettepe University. I am constantly improving myself, especially in the fields of Data structures and Artificial Intelligence. I learn programming languages such as Python, Java and C++ in detail and develop small projects using these languages. I think that I have the ability to work and research on any subject.</p>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <ul>
+                <li>Name: Esad Boran</li>
+                <li>University: Hacettepe University</li>
+                <li>Occupation: Artificial Intelligence</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li>Age: 23</li>
+                <li>Department: Computer Science</li>
+                <li>Favorite PL: Python</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <p>I always prefer things that make sense and are good in my life. Outside of class, I spend my time having fun with my friends, watching TV shows and mostly playing chess. These activities are great ways to help you relax and re-energize.<br>
+            <br>
+            During my time at Hacettepe University, I am constantly trying to improve my knowledge in computer engineering. So far, I have taken courses such as Machine Learning, Computer Vision, Fundamentals of Artificial Intelligence, Management Information Systems as elective courses (except required) at Hacettepe University.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container mt-4 pt-4">
+      <h1 class="text-center">Resume</h1>
+      <p style="text-align: center">You can obtain information about the schools I have studied at and the companies I have worked for from the details below.</p>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item pb-0">
+            <h4 style="color: #18d26e;">Esad BORAN</h4>
+            <p><em>An ambitious and eager to learn individual who has been working on Artificial Intelligence since 2022</em></p>
+            <ul>
+              <li>İzmir , Ankara</li>
+              <li>+90 553 463 91 19</li>
+              <li>esatsuphi@gmail.com</li>
+            </ul>
+          </div>
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <div style="display: flex;">
+              <div style="flex: 1;">
+                <h4 style="display: inline-block; margin-right: 10px; color: #18d26e;">Computer Science & Hacettepe University</h4>
+                <h5 style="display: inline-block;">2018 - 2024</h5>
+              </div>
+              <div style="flex: 0;"><img src="images/1024px-Hacettepe_%C3%9Cniversitesi_Logosu.svg.png" alt="Image" style="width: 75px; height: 110px;"></div>
+            </div>
+            <p><em>Ankara &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPA:3,14</em></p>
+            <p>I studied Computer Science at Hacettepe University. During this time, I took various courses in the field of computer science and reinforced my theoretical knowledge with practical applications. I benefited from the extensive resources of Hacettepe University and developed myself in an academic environment.</p>
+          </div>
+          <div class="resume-item">
+            <div style="display: flex;">
+              <div style="flex: 1;">
+                <h4 style="display: inline-block; margin-right: 10px;color: #18d26e;">Suphi Koyuncuoğlu Anatolian High School</h4>
+                <h5 style="display: inline-block;">2014 - 2018</h5>
+              </div>
+              <div style="flex: 0;"><img src="images/k_22091537_Suphi-Koyuncuoglu-Logo.jpg" alt="Image" style="width: 100px; height: 80px;"></div>
+            </div>
+            <p><em>İzmir &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPA : 89.27/100</em></p>
+            <p>It was a high school that gave English education as a foreign language education. The decisions I've made here over the course of four years have shaped my journey and left a lasting impression on me.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4 style="color: #18d26e;">Gelir İdaresi Başkanlığı</h4>
+            <h5>July 2023 – Present</h5>
+            <p><em>Internship</em></p>
+            <ul>
+              <li>Coming soon ...</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4 style="color: #18d26e;">Sisbim Technology</h4>
+            <h5>June 2022 – July 2022</h5>
+            <p><em>Internship</em></p>
+            <ul>
+              <li>I learned Html, Css, Javascript for web programming</li>
+              <li>I developed cloned Django projects such as Netflix, Blog, Instagram, and then we created web pages with the team I was with, and we also fixed the errors in our webpage.</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4 style="color: #18d26e;">ODAKGIS</h4>
+            <h5>September 2018 – December 2018</h5>
+            <p><em>Volunteer Internship</em></p>
+            <ul>
+              <li>Linux learning experience with an Information Security Specialist</li>
+              <li>Having good experiences with Computer Engineer software developer working in Python and Java languages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Resume Section -->
+  <!-- Start Hexagon Section -->
+  <section id="services" class="services">
+    <div class="page-services relative">
+      <div class="row">
+        <div  class="container mt-4 pt-4">
+          <h1 class="text-center">Services</h1>
+          <p style="text-align: center;">The listed skills include <b>Artificial Intelligence</b>, <b>Programming Languages</b>, <b>Frontend and Backend Technologies</b>, and various other valuable proficiencies. These expertise collectively contribute to a comprehensive understanding of technology and software development.</p><br>
+          <br>
+          <h3 id= "ai" style="text-align:center">Artificial Intelligence</h3><br>
+          <div class="hexagon-menu services clear d-flex justify-content-center">
+            <div class="service-hex">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+                <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+              </g></svg>
+              <div class="content">
+                <div class="icon"></div>
+                <h4>Machine<br>
+                Learning</h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="service-hex">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+                <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+              </g></svg>
+              <div class="content">
+                <div class="icon"></div>
+                <h4>Deep<br>
+                Learning</h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="service-hex">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+                <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+              </g></svg>
+              <div class="content">
+                <div class="icon"></div>
+                <h4>Computer<br>
+                Vision</h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="service-hex">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+                <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+              </g></svg>
+              <div class="content">
+                <div class="icon"></div>
+                <h4>Tensorflow<br>
+                PyTorch<br>
+                Keras</h4>
+                <p></p>
+              </div>
+            </div>
+          </div><br>
+          <br>
+          <h3 id = "pl" style="text-align:center">Programming Languages</h3><br>
+          <div class="hexagon-menu services clear d-flex justify-content-center">
+            <div class="service-hex">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+                <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+              </g></svg>
+              <div class="content">
+                <div class="icon"></div>
+                <h4>Python</h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="service-hex">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+                <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+              </g></svg>
+              <div class="content">
+                <div class="icon"></div>
+                <h4>Java</h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="service-hex">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+                <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+              </g></svg>
+              <div class="content">
+                <div class="icon"></div>
+                <h4>SQL</h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="service-hex">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+                <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+              </g></svg>
+              <div class="content">
+                <div class="icon"></div>
+                <h4>C++</h4>
+                <p></p>
+              </div>
+            </div><br>
+            <br>
+          </div><br>
+          <br>
+        </div><br>
+        <br>
+        <!---->
+        <h3 id="fst" style="text-align:center">Full Stack Technologies</h3><br>
+        <br>
+        <br>
+        <div class="hexagon-menu services clear d-flex justify-content-center">
+          <div class="service-hex">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+            <g>
+              <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+              <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+            </g></svg>
+            <div class="content">
+              <div class="icon"></div>
+              <h4>Django</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="service-hex">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+            <g>
+              <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+              <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+            </g></svg>
+            <div class="content">
+              <div class="icon"></div>
+              <h4>Spring</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="service-hex">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+            <g>
+              <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+              <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+            </g></svg>
+            <div class="content">
+              <div class="icon"></div>
+              <h4>JavaScript</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="service-hex">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+            <g>
+              <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+              <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+            </g></svg>
+            <div class="content">
+              <div class="icon"></div>
+              <h4>HTML<br>
+              CSS</h4>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- son-->
+      <br>
+      <br>
+      <h3 id="os" style="text-align:center">Other Skills</h3><br>
+      <div class="hexagon-menu services clear d-flex justify-content-center">
+        <div class="service-hex">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+          <g>
+            <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+            <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+          </g></svg>
+          <div class="content">
+            <div class="icon"></div>
+            <h4>LaTeX</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="service-hex">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+          <g>
+            <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+            <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+          </g></svg>
+          <div class="content">
+            <div class="icon"></div>
+            <h4>Data Structures</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="service-hex">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+          <g>
+            <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+            <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+          </g></svg>
+          <div class="content">
+            <div class="icon"></div>
+            <h4>Git</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="service-hex">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 372 424.5" style="enable-background:new 0 0 372 424.5;" xml:space="preserve">
+          <g>
+            <polygon class="st0" points="359.9,314.1 186.9,414 14,314.1 14,114.4 186.9,14.6 359.9,114.4"></polygon>
+            <polygon class="st1" points="331.2,297.6 186.9,380.9 42.6,297.6 42.6,131 186.9,47.6 331.2,131"></polygon>
+          </g></svg>
+          <div class="content">
+            <div class="icon"></div>
+            <h4>Microsoft 365</h4>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section><!-- load javascript after loading all html content -->
+    <!-- Site footer -->
+    <footer id ="contact" class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">I am a 4th year Computer Engineering student at Hacettepe University.
+                 I am constantly improving myself, especially in the fields of Data structures and Artificial Intelligence. I learn programming languages such as Python, Java and C++ in detail and develop small projects using these languages. 
+                I think that I have the ability to work and research on any subject.</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>My favorite Series</h6>
+              <ul class="footer-links">
+                <li>Breaking Bad</li>
+                <li>Game of Thrones</li>
+                <li>Behzat Ç.</li>
+                <li>The Queen's Gambit</li>
+                <li>Better Call Saul</li>
+                <li>The Last Kingdom</li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Some Useful Links</h6>
+              <ul class="footer-links">
+                <li>Coming soon...</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-2 col-xs-4">
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+              <ul class="social-icons2">
+                <li><a class="linkedin"href="https://www.linkedin.com/in/esadboran2018/"><i class="fa fa-linkedin"></i></a></li>  
+                <li><a class="twitter"href="https://twitter.com/BoranEsad"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="github" href="https://github.com/esadboran"><i class="fa fa-github"></i></a></li> 
+                <li><a class="github" href="mailto:esadsuphi@gmail.com"><i class="fa fa-envelope"></i></a></li>  
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+  <script src="script/script.js"></script>
 </body>
 </html>
